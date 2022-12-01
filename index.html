@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad | Anniee</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container-notepad relative">
+        <div class="header flex">
+            <h3><i class="fas fa-sticky-note"></i> My Notepad</h3>
+        </div>
+        <div class="addNote-btn-wrapper">
+            <button class="addNote-btn flex">
+                <i class="fa-solid fa-plus"></i>
+                <div class="btnText">Add Note</div>
+            </button>
+        </div>
+        <div class="note-main">
+
+        </div>
+        <!-- <div class="note">
+            <div class="text">
+                <img class="notepad-img" src="./assets/images/ui2.jfif" alt="Notepad">
+                <div class="note-title flex">Note-title</div>
+            </div>
+            <div class="contentModal flex">
+                <div class="openModal relative">
+                    <textarea name="textArea" id="textArea" placeholder="Write the Content" cols="129"
+                        rows="30"></textarea>
+                    <button class="flex saveBtn">Save</button>
+                </div>
+            </div>
+        </div> -->
+        <div class="opacity"></div>
+        <div class="titleModal-main flex">
+            <div class="titleModal flex">
+                <h4>Note Details</h4>
+                <input id="gettingNoteTitle" type="text" placeholder="Enter Note Title"><br>
+                <Button class="addNote-btn" id="addNote">Create</Button>
+                <Button class="addNote-btn" id="cancelNote">Cancel</Button>
+
+            </div>
+        </div>
+        <!-- <div class="contentModal flex">
+            <div class="openModal relative">
+                <textarea name="textArea" id="textArea" placeholder="Write the Content" cols="129" rows="30"></textarea>
+                <button class="flex saveBtn">Save</button>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="./assets/JS/app.js"></script>
+</body>
+
+</html>
+
+
+<!-- <div class="operations relative">
+    <button class="btn-edit"><i class="fas fa-edit"></i></button>
+    <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
+</div> -->

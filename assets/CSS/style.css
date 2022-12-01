@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Kalam&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.container-notepad {
+    width: 100%;
+}
+
+.header {
+    font-family: 'Abyssinica SIL', serif;
+    width: 100%;
+    height: 70px;
+    justify-content: flex-start;
+    padding-left: 30px;
+    background-color: #f1c40f;
+}
+
+.addNote-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addNote-btn-wrapper .addNote-btn,
+.titleModal .addNote-btn,
+.contentModal .saveBtn {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(255, 230, 0);
+    background-color: #f1c40f;
+    outline: none;
+    border: none;
+    margin: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.addNote-btn-wrapper .addNote-btn .fa-plus {
+    font-size: 18px;
+    margin: 6px;
+}
+
+/* Note Styling */
+.note {
+    width: 250px;
+    height: 150px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.note .text {
+    width: 250px;
+    height: 135px;
+}
+
+.note .text .notepad-img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #737373;
+    border-radius: 10px 10px 0 0px;
+}
+
+.note .text .note-title {
+    margin: -5px 0;
+    width: 250.4px;
+    height: 55px;
+    border: 1px solid #737373;
+    border-radius: 0px 0 10px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* After Click on Add button we have to ask user for Note title by a Modal */
+.titleModal-main {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.titleModal {
+    display: none;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    flex-direction: column;
+    border: 2px solid #8b8b8b;
+    border-radius: 10px;
+}
+
+.titleModal .addNote-btn {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    flex-direction: row;
+    margin: 5px;
+
+}
+
+.titleModal h4 {
+    text-decoration: underline;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.titleModal input {
+    width: 80%;
+    padding: 10px;
+
+}
+
+.contentModal {
+    display: none;
+    margin-left: 15px;
+    position: absolute;
+    top: -30px;
+    z-index: 10;
+    left: -30px;
+}
+
+.contentModal .openModal textarea {
+    padding: 10px;
+    font-size: 17px;
+}
+
+.contentModal .openModal {
+    width: 1250px;
+    height: 700px;
+}
+
+.contentModal .openModal .saveBtn {
+    position: absolute;
+    left: 85%;
+}
+
+.opacity {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
